@@ -43,9 +43,7 @@ So far the basics, time to look at the bytecode for an actual function.
 
     incrementX({x: 42});  // V8’s compiler is lazy, if you don’t run a function, it won’t interpret it.
 
-{% blockquote %}
-If you want to see** V8's bytecode of JavaScript code**, you can print it by calling [D8](https://github.com/v8/v8/wiki/Using-D8) or Node.js (8.3 or higher) with the flag `--print-bytecode`. For Chrome, start Chrome from the command line with `--js-flags="--print-bytecode"`, see [Run Chromium with flags](https://www.chromium.org/developers/how-tos/run-chromium-with-flags).
-{% endblockquote %}
+_If you want to see** V8's bytecode of JavaScript code**, you can print it by calling [D8](https://github.com/v8/v8/wiki/Using-D8) or Node.js (8.3 or higher) with the flag `--print-bytecode`. For Chrome, start Chrome from the command line with `--js-flags="--print-bytecode"`, see [Run Chromium with flags](https://www.chromium.org/developers/how-tos/run-chromium-with-flags)._
   
     ...
     [generating bytecode for function: incrementX]
@@ -70,12 +68,12 @@ We can ignore most of the output and focus on the actual bytecodes. Here is what
 
 `LdaSmi`` [1]` loads the constant value `1` in the accumulator.
 
-{% asset_img smallImage1.png %}
+![](/assets/blog/bytecode/smallImage1.png)
 ### Star r0
 
 Next, `Star r0` stores the value that is currently in the accumulator, `1,` in the register `r0`.
 
-{% asset_img smallImage2.png %}
+![](/assets/blog/bytecode/smallImage2.png)
 
 ### `LdaNamedProperty a0, [0], [4]`
 
@@ -90,13 +88,13 @@ What is the operand with value `4` used for? It is an index of the so-called *fe
 
 Now the registers look like this:
 
-{% asset_img smallImage3.png %}
+![](/assets/blog/bytecode/smallImage3.png)
 
 ### Add r0, [6]
 
 The last instruction adds `r0` to the accumulator, resulting in`43`. `6` is another index of the feedback vector.
 
-{% asset_img smallImage4.png %}
+![](/assets/blog/bytecode/smallImage4.png)
 
 ### Return
 
@@ -104,4 +102,4 @@ The last instruction adds `r0` to the accumulator, resulting in`43`. `6` is anot
 
 At a first glance, V8’s bytecode might look rather cryptic, especially with all the extra information printed. But once you know that Ignition is a register machine with an accumulator register, you can figure out what most bytecodes do.
 
-> Note: The bytecode described here is from V8 version 6.2, Chrome 62, and a (not yet released) version of Node 9. We always work on V8 to improve performance and memory consumption. In other V8 versions, the details might be different.
+_Note: The bytecode described here is from V8 version 6.2, Chrome 62, and a (not yet released) version of Node 9. We always work on V8 to improve performance and memory consumption. In other V8 versions, the details might be different._
