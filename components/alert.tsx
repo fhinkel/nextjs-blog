@@ -29,7 +29,6 @@ const Alert = ({ preview }: Props) => {
             </>
           ) : (
             <>
-              Free {' '}
               <a
                 href={`${COACHING}`}
                 className="underline hover:text-blue-600 duration-200 transition-colors"

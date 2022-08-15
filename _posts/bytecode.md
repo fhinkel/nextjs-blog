@@ -40,7 +40,9 @@ So far the basics, time to look at the bytecode for an actual function.
       return 1 + obj.x;
     }
 
-    incrementX({x: 42});  // V8’s compiler is lazy, if you don’t run a function, it won’t interpret it.
+    incrementX({x: 42});  // V8’s compiler is lazy
+      // if you don’t run a function, 
+      // it won’t interpret it.
 
 _If you want to see **V8's bytecode of JavaScript code**, you can print it by calling [D8](https://github.com/v8/v8/wiki/Using-D8) or Node.js (8.3 or higher) with the flag `--print-bytecode`. For Chrome, start Chrome from the command line with `--js-flags="--print-bytecode"`, see [Run Chromium with flags](https://www.chromium.org/developers/how-tos/run-chromium-with-flags)._
   
@@ -49,12 +51,12 @@ _If you want to see **V8's bytecode of JavaScript code**, you can print it by ca
     [generating bytecode for function: incrementX]
     Parameter count 2
     Frame size 8
-      12 E> 0x2ddf8802cf6e @    StackCheck
-      19 S> 0x2ddf8802cf6f @    LdaSmi [1]
-            0x2ddf8802cf71 @    Star r0
-      34 E> 0x2ddf8802cf73 @    LdaNamedProperty a0, [0], [4]
-      28 E> 0x2ddf8802cf77 @    Add r0, [6]
-      36 S> 0x2ddf8802cf7a @    Return
+      12 E> 0x2ddf8802cf6e @  StackCheck
+      19 S> 0x2ddf8802cf6f @  LdaSmi [1]
+            0x2ddf8802cf71 @  Star r0
+      34 E> 0x2ddf8802cf73 @  LdaNamedProperty a0, [0], [4]
+      28 E> 0x2ddf8802cf77 @  Add r0, [6]
+      36 S> 0x2ddf8802cf7a @  Return
     Constant pool (size = 1)
     0x2ddf8802cf21: [FixedArray] in OldSpace
      - map = 0x2ddfb2d02309 <Map(HOLEY_ELEMENTS)>
