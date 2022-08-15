@@ -21,6 +21,10 @@
   @apply bg-gray-100 max-w-2xl overflow-x-scroll;
 }
 
+.markdown code {
+  @apply bg-gray-100;
+}
+
 .markdown a {
   @apply underline hover:text-blue-600 duration-200 transition-colors;
 }
