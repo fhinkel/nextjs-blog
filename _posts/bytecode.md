@@ -14,11 +14,12 @@ V8 is Google’s open source JavaScript engine. Chrome, Node.js, and many other 
 
 *This post is [available in Chinese](https://zhuanlan.zhihu.com/p/28590489), translated by [justjavac](https://medium.com/@justjavac).*
 
-{% asset_img img1.png "Ignition! We have lift-off! Interpreter Ignition is part of our compiler pipeline since 2016." %}
 
-When V8 compiles JavaScript code, the parser generates an abstractsyntax tree. A syntax tree is a tree representation of the syntactic structure of the JavaScriptcode.Ignition, the interpreter, generates bytecode from this syntax tree.TurboFan, the optimizing compiler, eventually takes the bytecode and generates optimized machine code from it.
+![Space rocket taking off](/assets/blog/bytecode/img1.png "Ignition! We have lift-off! Interpreter Ignition is part of our compiler pipeline since 2016.")
 
-{% asset_img img2.png "V8’s compiler pipeline" %}
+When V8 compiles JavaScript code, the parser generates an abstractsyntax tree. A syntax tree is a tree representation of the syntactic structure of the JavaScriptcode.Ignition, the interpreter, generates bytecode from this syntax tree. TurboFan, the optimizing compiler, eventually takes the bytecode and generates optimized machine code from it.
+
+![Schematic of V8's compiler pipeline](/assets/blog/bytecode/img2.png "V8’s compiler pipeline")
 
 If you want to know why we have two execution modes, you can check out my video from JSConfEU:
 {% youtube p-iiEDtpy6I %}
@@ -26,7 +27,7 @@ If you want to know why we have two execution modes, you can check out my video 
 
 **Bytecode is an abstraction of machine code**. Compiling bytecode to machine code is easier if the bytecode was designed with the same computational model as the physical CPU. This is why interpreters are often register or stack machines.**Ignition is a register machine with an accumulator register.**
 
-{% asset_img img3.png %}
+![Schematic of high level languages vs machine coe](/assets/blog/bytecode/img3.png)
 
 You can think of V8's bytecodes **as small building blocks**that make up any JavaScript functionality when composed together. V8 has several hundred bytecodes. There are bytecodes for operators like `Add` or `TypeOf`, or for property loads like `LdaNamedProperty`.V8 also has some pretty specific bytecodes like `CreateObjectLiteral`or `SuspendGenerator`. The header file [bytecodes.h](https://github.com/v8/v8/blob/master/src/interpreter/bytecodes.h) defines the complete list of V8’s bytecodes.
 
