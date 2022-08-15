@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
       <Link href="/">
-        <a className="hover:underline">Blog</a>
+        <a className="hover:underline">Fhinkel</a>
       </Link>
       .
     </h2>
@@ -12,3 +12,4 @@ const Header = () => {
 }
 
 export default Header
+
