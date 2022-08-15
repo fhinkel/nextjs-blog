@@ -33,7 +33,7 @@ const Alert = ({ preview }: Props) => {
                 href={`${COACHING}`}
                 className="underline hover:text-blue-600 duration-200 transition-colors"
               >
-                career coaching
+                Career coaching
               </a>
               {' '}for women in tech.
             </>
