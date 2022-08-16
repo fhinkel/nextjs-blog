@@ -29,3 +29,6 @@
   @apply underline hover:text-blue-600 duration-200 transition-colors;
 }
 
+.markdown figcaption {
+  @apply text-sm text-center italic;
+}
