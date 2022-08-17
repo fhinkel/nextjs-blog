@@ -17,9 +17,9 @@
   @apply text-2xl mt-8 mb-4 leading-snug;
 }
 
-.markdown pre {
+/* .markdown pre {
   @apply bg-gray-100 max-w-2xl overflow-x-scroll;
-}
+} */
 
 .markdown code {
   @apply bg-gray-100;
