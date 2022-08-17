@@ -1,6 +1,7 @@
 ---
-title: "How I learned to love the\_terminal"
-excerpt: 'V8 is Google’s open source JavaScript engine. Chrome, Node.js, and many other applications use V8. This article explains V8’s bytecode format — which is actually easy to read once you understand some basic concepts.'
+title: "How I Learned to Love the Terminal"
+excerpt: 'An introduction to the command line.
+Knowing your way around the commnand line has many benefits. With a bit of practice, you can accomplish many tasks much faster on the command line than using any other tool.'
 coverImage: '/assets/blog/How-I-learned-to-love-the-terminal/cover.jpg'
 date: '2019-11-08T05:35:07.322Z'
 author:
