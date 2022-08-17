@@ -9,8 +9,6 @@ author:
 ogImage:
   url: '/assets/blog/How-I-learned-to-love-the-terminal/cover.jpg'
 ---
-
-
 *An introduction to the command line.*
 
 Knowing your way around the commnand line has many benefits. With a bit of practice, you can accomplish many tasks much faster on the command line than using any other tool.
@@ -41,21 +39,17 @@ To see hidden files, i.e., filenames that start with a dot, use `ls -la`. Check 
 
 ## Configure your terminal
 
-The config file .bash_profile determines how your terminal, more specifically bash, behaves¹. The .bash_profile file is in your home directory (`~/`) . In this file you can do things like
-
-* specify shortcuts with `alias`
-* configure your prompt
-* set environment variables.
+The config file .bash_profile determines how your terminal, more specifically bash, behaves¹. The .bash_profile file is in your home directory (`~/`) . In this file you can do things like specifying shortcuts with `alias`, configuring your prompt, or setting environment variables.
 
 ## Git on the command line
 
 If you use git on the command line, there are a few tricks to make your life easier. You can enable tab completion for git and configure custom shortcuts like `git co` for `git checkout`. For me, the most important feature is to always see what branch I'm on. 
 
-![Terminal where the prompt shows the current directory and git branch](https://thepracticaldev.s3.amazonaws.com/i/4g00gmm30d4xlb5laa8s.png)
+![Terminal where the prompt shows the current directory and git branch.](/assets/blog/How-I-learned-to-love-the-terminal/cover.jpg)
 
 My bash shows the current directory and the branch I'm on if I'm in a git directory. I configure this behavior in my `.bash_profile` with the following lines:
 
-```
+```bash
 # The next line enables git autocompletion
 . ~/.git-completion.bash
 
