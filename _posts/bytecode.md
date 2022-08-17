@@ -79,8 +79,10 @@ Next, `Star r0` stores the value that is currently in the accumulator, `1,` in t
 ### LdaNamedProperty a0, [0], [4]
 `LdaNamedProperty` loads a named property of `a0` into the accumulator. `ai` refers to the i-th argument of `incrementX()`. In this example, we look up a named property on `a0`, the first argument of `incrementX()`. The name is determined by the constant `0`. `LdaNamedProperty` uses `0` to look up the name in a separate table:
 
-    - length: 1
-               0: 0x2ddf8db91611 <String[1]: x>
+```bash
+- length: 1
+           0: 0x2ddf8db91611 <String[1]: x>
+```
 
 Here, `0` maps to `x`. So this bytecode loads `obj.x`.
 
@@ -100,7 +102,7 @@ The last instruction adds `r0` to the accumulator, resulting in `43`. `6` is ano
 
 `Return` returns the value in the accumulator. That is the end of the function `incrementX()`. The caller of `incrementX()` starts off with `43` in the accumulator and can further work with this value.
 
-At a first glance, V8’s bytecode might look rather cryptic, especially with all the extra information printed. But once you know that Ignition is a register machine with an accumulator register, you can figure out what most bytecodes do.
+At a first glance, V8’s bytecode might look rather cryptic, especially with all the extra information printed. But once you know that _Ignition_ is a register machine with an accumulator register, you can figure out what most bytecodes do.
 
 --- 
 
