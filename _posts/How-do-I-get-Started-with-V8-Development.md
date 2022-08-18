@@ -1,6 +1,6 @@
 ---
 title: How do I get Started with V8 Development?
-excerpt: 'Are you interested in understanding more about compilers, virtual machines, JavaScript engines, and maybe even want to contribute to V8? Have you never taken a compiler course (maybe no formal CS course) or no experience in C++? Fear not, nobody was born with that knowledge. You don’t need to understand all aspects of compilers to make a contribution. Here are some resources that might help you on the way.'
+excerpt: 'Are you interested in understanding more about compilers, virtual machines, JavaScript engines, and maybe even want to contribute to V8? You don’t need to understand all aspects of compilers to make a contribution. Here are some resources that might help you on the way.'
 coverImage: '/assets/blog/How-do-I-get-Started-with-V8-Development/img2.png'
 date: '2017-07-30T05:35:07.322Z'
 author:
@@ -9,7 +9,9 @@ author:
 ogImage:
   url: '/assets/blog/How-do-I-get-Started-with-V8-Development/img2.png'
 ---
-Are you interested in understanding more about compilers, virtual machines, JavaScript engines, and maybe even want to contribute to V8? Have you never taken a compiler course (maybe no formal CS course) or no experience in C++? Fear not, nobody was born with that knowledge. You don’t need to understand all aspects of compilers to make a contribution. Here are some resources that might help you on the way.
+Are you interested in understanding more about compilers, virtual machines, JavaScript engines, and maybe even want to contribute to V8? 
+
+Have you never taken a compiler course (maybe no formal CS course) or no experience in C++? Fear not, nobody was born with that knowledge. You don’t need to understand all aspects of compilers to make a contribution. Here are some resources that might help you on the way.
 
 There are very few compiler books, and I have not found one that covers modern optimizations, especially for JavaScript engines. If you want to learn the fundamentals, the [Dragon Book](http://geni.us/dSsWMRU) (Compilers: Principles, Techniques, & Tools, 2nd Edition) is the book to read.
 
