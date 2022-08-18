@@ -66,6 +66,7 @@ Download the scripts from the git source code mirror and follow the instructions
 
 Be adventurous. Don't let the terminal intimidate you! Once you know some basics, it's easy to work efficiently with the command line. Search [StackOverflow](https://stackoverflow.com/questions/tagged/command-line) for tips to make things even easier. Read through other people's config files (mine are [here](https://github.com/fhinkel/configs)). Go explore and try a few things. Lots of tips are really helpful, you just need to find those that work for you.
 
+---
 
 ¹ .bash_profile is the default config for bash on MacOS. On Linux, use .bashrc.
 

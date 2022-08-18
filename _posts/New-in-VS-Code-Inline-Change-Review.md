@@ -9,7 +9,7 @@ author:
 ogImage:
   url: '/assets/blog/New-in-VS-Code-Inline-Change-Review/img2.png'
 ---
-# Expandable Git annotations in the gutter like in WebStorm 🎉
+## Expandable Git annotations in the gutter like in WebStorm 🎉
 
 Since VS Code [1.18](https://code.visualstudio.com/updates/v1_18), you can expand the little Git [annotations in the gutter](https://code.visualstudio.com/docs/editor/versioncontrol#_gutter-indicators) like in WebStorm. They show the diff inline in the editor and make individual reverts easy.
 

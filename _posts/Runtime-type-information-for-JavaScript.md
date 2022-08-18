@@ -10,7 +10,7 @@ author:
 ogImage:
   url: '/assets/blog/Runtime-type-information-for-JavaScript/img1.png'
 ---
-# Chrome V8 can now collect type information at runtime
+## Chrome V8 can now collect type information at runtime
 
 Get types like string, number, null, or custom classes at runtime. V8 can now collect type information. V8 is Google’s open source JavaScript engine. Chrome, Node.js, and many otherapplications use V8. This type profiler is built into the engine, the information is not statically inferred.
 

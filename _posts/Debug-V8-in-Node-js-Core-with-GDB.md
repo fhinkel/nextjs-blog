@@ -10,8 +10,6 @@ ogImage:
   url: '/assets/blog/Debug-V8-in-Node-js-Core-with-GDB/cover.jpg'
 ---
 
-# Or in other projects that embed V8
-
 If you contribute to Node core, you will eventually need to debug C++ code in [/node/src/](https://github.com/nodejs/node/tree/master/src). If you’ve done this before, you might have noticed that GDB’s print command is not helpful when working with V8 code.
 
 **TL;DR: Use .gdbinit from V8.**
