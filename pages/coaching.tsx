@@ -47,9 +47,9 @@ export default function About() {
               <InlineWidget url="https://calendly.com/fhinkel" />
             </div>
 
-            <div className="text-3xl mb-3 leading-snug">Waitlist</div>
+            <div className="text-3xl mb-3 leading-snug">Wait list</div>
             <div className='my-4'>
-              No time slot available that works for you? Join the waitlist.
+              No time slot available that works for you? Join the wait list.
             </div>
 
             <div className="w-full md:w-9/12 md:max-w-full">
