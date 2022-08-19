@@ -27,9 +27,9 @@ When can we allocate **objects on the heap**? You can think of the heap as extra
 
 > Stack and heap in the context of memory management have always been nebulousconcepts to me. Understanding the run-time stack finally made it click.
   
-Stack and heap became clear to me when I read [Computer Systems: A Programmer’s Perspective (3rd Edition)](http://geni.us/ySGa). Now it seems kind of obvious, but once you understand something it’s always obvious.
+Stack and heap became clear to me when I read [Computer Systems: A Programmer’s Perspective (3rd Edition)](https://amzn.to/3whwlIu). Now it seems kind of obvious, but once you understand something it’s always obvious.
 
-![[Computer Systems: A Programmer’s Perspective (3rd Edition)](http://geni.us/ySGa)](/assets/blog/Confused-about-Stack-and-Heap/cover.jpg)
+![[Computer Systems: A Programmer’s Perspective (3rd Edition)](https://amzn.to/3wirJlv)](/assets/blog/Confused-about-Stack-and-Heap/cover.jpg)
 
 The book has several chapters on machine-level representation of programs. These chapters are about assembly code. One has a subsection *The Run-Time Stack*.
 

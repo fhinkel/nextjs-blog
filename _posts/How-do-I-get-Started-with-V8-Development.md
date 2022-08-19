@@ -13,9 +13,9 @@ Are you interested in understanding more about compilers, virtual machines, Java
 
 Have you never taken a compiler course (maybe no formal CS course) or no experience in C++? Fear not, nobody was born with that knowledge. You don’t need to understand all aspects of compilers to make a contribution. Here are some resources that might help you on the way.
 
-There are very few compiler books, and I have not found one that covers modern optimizations, especially for JavaScript engines. If you want to learn the fundamentals, the [Dragon Book](http://geni.us/dSsWMRU) (Compilers: Principles, Techniques, & Tools, 2nd Edition) is the book to read.
+There are very few compiler books, and I have not found one that covers modern optimizations, especially for JavaScript engines. If you want to learn the fundamentals, the [Dragon Book](https://amzn.to/3A8ayEv) (Compilers: Principles, Techniques, & Tools, 2nd Edition) is the book to read.
 
-![My professor’s copy that he used in grad school. Get the [2nd edition from 2006](http://geni.us/dSsWMRU)](/assets/blog/How-do-I-get-Started-with-V8-Development/img1.jpeg)
+![My professor’s copy that he used in grad school. Get the [2nd edition from 2006](https://amzn.to/3A8ayEv)](/assets/blog/How-do-I-get-Started-with-V8-Development/img1.jpeg)
 
 There are multiple **blogs** about V8:
 
