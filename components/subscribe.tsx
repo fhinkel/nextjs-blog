@@ -35,15 +35,13 @@ function Subscribe() {
     };
 
     return (
-        <div className="w-full md:w-96 md:max-w-full mx-auto">
-            <div className="p-6 border border-gray-300 sm:rounded-md">
+        <div className="w-full md:max-w-full">
+            <div className="">
                 <form onSubmit={subscribe}>
-                    <label className="block mb-6" htmlFor="email-input">
-                        <span className="text-gray-700">{'Email Address'}</span>
-                    </label>
                     <input className="block
             w-full
             mt-1
+            my-4           
             border-gray-300
             rounded-md
             shadow-sm
@@ -58,9 +56,8 @@ function Subscribe() {
                         required
                         type="email"
                     />
-                    <br></br>
                     <div>
-                        <span className="text-gray-700">
+                        <span className="">
                             {message
                                 ? message
                                 : `I'll only send emails when new content is posted. No spam.`}
@@ -71,7 +68,7 @@ function Subscribe() {
                         <button className="h-10
             px-5
             text-indigo-100
-            bg-indigo-700
+            bg-blue-800
             rounded-lg
             transition-colors
             duration-150

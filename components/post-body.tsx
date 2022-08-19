@@ -12,7 +12,12 @@ const PostBody = ({ content }: Props) => {
         className={markdownStyles['markdown']}
         dangerouslySetInnerHTML={{ __html: content }}
       />
-      <Subscribe />
+      <div className="w-full md:w-9/12 md:max-w-full mx-auto mt-16">
+        <div className="p-6 border border-gray-300 sm:rounded-md">
+          <div>Subscribe to the newsletter</div>
+          <Subscribe />
+        </div>
+      </div>
     </div>
   )
 }

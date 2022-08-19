@@ -25,32 +25,36 @@ export default function About() {
 
           <div className="max-w-2xl mx-auto">
             <div className="text-3xl mb-3 leading-snug">Career Coaching</div>
-            <div>
+            <div className='my-4'>
               I provide one-on-one coaching to individuals looking for support, at any stage.
               As a career coach specializing in high tech and FAANG, my expertise includes backend
               software engineering, developer relations, Cloud development, and people management.
             </div>
-            <br /><br />
-            We’ll meet whenever you need an outside perspective from an experienced engineering leader
-            via video chat. Meeting with me is like having a one-on-one with a manager who cares deeply
-            about you and your own growth. I'm here to give you feedback, advice, and most importantly,
-            to help you to introspect and find the answers that are inside of you.
-            <br /><br />
-            Most often, I work with you to strategically and intentionally connect the dots between your
-            career story and the companies and positions you are targeting in your job search. I’m also
-            happy to help you brainstorm and edit your resume and job applications.
-
+            <div className='my-4'>
+              We’ll meet whenever you need an outside perspective from an experienced engineering leader
+              via video chat. Meeting with me is like having a one-on-one with a manager who cares deeply
+              about you and your own growth. I'm here to give you feedback, advice, and most importantly,
+              to help you to introspect and find the answers that are inside of you.
+            </div>
+            <div className='my-4'>
+              Most often, I work with you to strategically and intentionally connect the dots between your
+              career story and the companies and positions you are targeting in your job search. I’m also
+              happy to help you brainstorm and edit your resume and job applications.
+            </div>
             <div className="text-3xl mb-3 leading-snug">Book your session now</div>
-            <b>I'm offering free coaching sessions for women in tech.</b>
+            <div className=''>I'm offering free coaching sessions for women in tech.</div>
             <div className="App">
               <InlineWidget url="https://calendly.com/fhinkel" />
             </div>
 
             <div className="text-3xl mb-3 leading-snug">Waitlist</div>
-            No time slot available that works for you? Join the waitlist.
+            <div className='my-4'>
+              No time slot available that works for you? Join the waitlist.
+            </div>
 
-            <Subscribe />
-
+            <div className="w-full md:w-9/12 md:max-w-full">
+              <Subscribe />
+            </div>
           </div>
         </Container>
       </Layout>
