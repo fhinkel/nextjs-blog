@@ -53,7 +53,7 @@ export default function About() {
             </div>
 
             <div className="w-full md:w-9/12 md:max-w-full">
-              <Subscribe />
+              <Subscribe m={`Get notified when new appointments are available. No spam.`}/>
             </div>
           </div>
         </Container>

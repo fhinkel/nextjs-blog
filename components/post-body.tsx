@@ -15,7 +15,7 @@ const PostBody = ({ content }: Props) => {
       <div className="w-full md:w-9/12 md:max-w-full mx-auto mt-16">
         <div className="p-6 border border-gray-300 sm:rounded-md">
           <div>Subscribe to the newsletter</div>
-          <Subscribe />
+          <Subscribe m={`I'll only send emails when new content is posted. No spam.`} />
         </div>
       </div>
     </div>

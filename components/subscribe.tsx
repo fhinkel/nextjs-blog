@@ -1,6 +1,9 @@
 import React, { useRef, useState } from 'react';
 
-function Subscribe() {
+type Props = {
+    m: string
+}
+function Subscribe({ m }: Props) {
     // 1. Create a reference to the input so we can fetch/clear it's value.
     const inputEl = useRef(null);
     // 2. Hold a message in state to handle the response from our API.
@@ -60,7 +63,7 @@ function Subscribe() {
                         <span className="">
                             {message
                                 ? message
-                                : `I'll only send emails when new content is posted. No spam.`}
+                                :  m }
                         </span>
                     </div>
                     <br></br>
