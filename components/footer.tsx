@@ -17,10 +17,10 @@ const Footer = () => {
               Career Coaching
             </a>
             <a
-              href={`${GITHUB}`}
+              href={`/about`}
               className="mx-3 font-bold hover:underline"
             >
-              View on GitHub
+              About
             </a>
           </div>
         </div>

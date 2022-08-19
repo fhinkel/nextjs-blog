@@ -41,6 +41,25 @@ export default function About() {
               documentation.
               <br />
               <br />
+              Find me on {' '}
+              <a target="_blank" href="https://github.com/fhinkel">
+                <i className="fa-brands fa-github"></i>
+              </a>
+              , {' '}
+              <a target="_blank" href="https://twitter.com/fhinkel">
+                <i className="fa-brands fa-twitter"></i>
+              </a>
+              , {' '}
+              <a target="_blank" href="https://www.linkedin.com/in/fhinkel/">
+                <i className="fa-brands fa-linkedin"></i>
+              </a>
+              , and {' '}
+              <a target="_blank" href="https://medium.com/@fhinkel">
+                <i className="fa-brands fa-medium"></i>
+              </a>
+              .
+              <br></br>
+              <br></br>
             </div>
           </div>
         </Container>

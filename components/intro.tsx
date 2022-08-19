@@ -9,26 +9,8 @@ const Intro = () => {
         </Link>
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        Franziska Hinkelmann, Ph.D., Principal Engineering Manager at Microsoft. Node.js Technical Steering Committee member. Former compiler engineer on Google’s Chrome V8 team. Pronouns she/they.
-        <br></br>
-        Find me on {' '}
-        <a target="_blank" href="https://github.com/fhinkel">
-          <i className="fa-brands fa-github"></i>
-        </a>
-        , {' '}
-        <a target="_blank" href="https://twitter.com/fhinkel">
-          <i className="fa-brands fa-twitter"></i>
-        </a>
-        , {' '}
-        <a target="_blank" href="https://www.linkedin.com/in/fhinkel/">
-          <i className="fa-brands fa-linkedin"></i>
-        </a>
-        , and {' '}
-        <a target="_blank" href="https://medium.com/@fhinkel">
-          <i className="fa-brands fa-medium"></i>
-        </a>
-        .
-
+        Franziska Hinkelmann, Ph.D., Principal Engineering Manager at Microsoft. Node.js Technical 
+        Steering Committee member. Former compiler engineer on Google’s Chrome V8 team. Pronouns she/they.
       </h4>
     </section>
   )
